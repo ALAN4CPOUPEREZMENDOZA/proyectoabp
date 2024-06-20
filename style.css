@@ -103,3 +103,25 @@ footer {
     padding: 10px 0;
     width: 100%;
 }
+/* Ejemplo de animación de fade in */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Ejemplo de animación de zoom in */
+.zoom-in {
+    opacity: 0;
+    transform: scale(0);
+    animation: zoomInAnimation 0.5s ease forwards;
+}
+
+@keyframes zoomInAnimation {
+    0% { opacity: 0; transform: scale(0); }
+    100% { opacity: 1; transform: scale(1); }
+}
